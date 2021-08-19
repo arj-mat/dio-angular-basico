@@ -2,6 +2,14 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.1.
 
+## Conceitos aplicados
+
+- Material Design Bootstrap ([MDB](https://mdbootstrap.com/docs/b5/angular/));
+- Componentes, atributos e data binding;
+- Injeção de dependência e Services;
+- Pipes personalizados;
+- Routing.
+
 ## Link de teste
 
 [https://arj-mat.github.io/dio-angular-basico/dist/navegacao/](https://arj-mat.github.io/dio-angular-basico/dist/navegacao/)
