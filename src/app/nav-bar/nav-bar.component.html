@@ -1,0 +1,47 @@
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+        <!-- Navbar brand -->
+        <a class="navbar-brand" href="/">Items do Dia</a>
+
+        <!-- Toggle button -->
+        <button class="navbar-toggler" type="button" (click)="basicNavbar.toggle()" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" mdbCollapse #basicNavbar="mdbCollapse">
+            <!-- Left links -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" [routerLink]="['/all']" routerLinkActive="active">Todos os
+                        Itens</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['/legendaries']" routerLinkActive="active">Itens Lendários</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['/rares']" routerLinkActive="active">Itens Raros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['/epics']" routerLinkActive="active">Itens Raros</a>
+                </li>
+            </ul>
+            <!-- Left links -->
+
+            <!-- Search form -->
+            <form class="d-flex input-group w-auto">
+                <input type="search" class="form-control" placeholder="Pesquisar por nome" aria-label="Search"
+                    [(ngModel)]="searchValue" [ngModelOptions]="{standalone: true}" />
+                <button class="btn btn-outline-light" type="button">
+                    Pesquisar
+                </button>
+            </form>
+        </div>
+        <!-- Collapsible wrapper -->
+    </div>
+    <!-- Container wrapper -->
+</nav>
+<!-- Navbar -->

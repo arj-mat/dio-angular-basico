@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.item-card {
+    width: calc(25% - (0.5rem * 2));
+    text-align: center;
+    margin: 0.5rem;
+    position: relative;
+}
+
+.item-card img {
+    height: 180px;
+    width: auto;
+    align-self: center;
+}
+
+.item-card .card-body {
+    padding-bottom: 0;
+}
+
+.item-card .button-container {
+    margin: 0.5rem;
+}

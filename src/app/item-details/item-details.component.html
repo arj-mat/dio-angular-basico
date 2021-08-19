@@ -1,0 +1,30 @@
+<div *ngIf="hasLoaded">
+    <div *ngIf="item != undefined" class="details-container">
+        <h1>{{item.name}}</h1>
+
+        <img class="main-image" [src]="item.image" />
+
+        <table class="table table-borderless text-light" style="width: 600px;">
+            <tbody>
+                <tr>
+                    <td style="width: 300px;">Data Última Aparição</td>
+                    <td style="width: 300px;">{{item.last_appearance_date | timestampToDate}}</td>
+                </tr>
+                <tr>
+                    <td>Temporada de Lançamento</td>
+                    <td>{{item.release_season.substr(2)}}</td>
+                </tr>
+                <tr>
+                    <td>Preço</td>
+                    <td>{{item.price | currency: 'BRL'}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div *ngIf="item == undefined">
+        <h3>Item não encontrado.</h3>
+
+        <a href="/">&lt; Retornar à página inicial</a>
+    </div>
+</div>
