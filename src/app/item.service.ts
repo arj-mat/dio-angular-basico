@@ -12,7 +12,7 @@ export class ItemService {
     private itemsCache?: Array<ShopItem>;
 
     public async fetchItems(): Promise<FortniteShopData.Response> {
-        return fetch( `/assets/daily-shop.json?d=${Date.now()}` )
+        return fetch( `assets/daily-shop.json?d=${Date.now()}` )
             .then( response => response.json() );
     }
 
